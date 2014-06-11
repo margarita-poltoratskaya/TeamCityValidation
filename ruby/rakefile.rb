@@ -3,7 +3,7 @@ require 'bundler/setup'
 # require your gems as usual 
 require 'nokogiri'
 
-task :default => [:ready_for_the_day]
+task :default => [:wonderful_world]
 
 task :wonderful_world do
     ruby File.expand_path(File.dirname(__FILE__)) + "/myruby.rb"
