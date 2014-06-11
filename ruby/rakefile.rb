@@ -6,5 +6,5 @@ require 'nokogiri'
 task :default => [:test]
 
 task :test do
-    ruby "myruby.rb"
+    ruby File.expand_path(File.dirname(__FILE__)) + "/myruby.rb"
 end
