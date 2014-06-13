@@ -32,3 +32,9 @@ end
   end
   
 task :wonderful_world => :ready_for_the_day
+
+task :manipulate_files do
+  mkdir 'new_dir'
+  touch 'new_dir/file.txt'
+  copy 'myruby.rb', 'new_dir/copy_myruby.rb'
+end
